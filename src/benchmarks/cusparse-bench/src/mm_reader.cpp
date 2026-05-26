@@ -103,7 +103,7 @@ public:
         return isSymmetric;
     }
 
-    char &GetTypecode( )
+    char* GetTypecode( )
     {
         return Typecode;
     }

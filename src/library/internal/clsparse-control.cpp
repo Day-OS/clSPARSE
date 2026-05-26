@@ -120,7 +120,7 @@ clsparseCreateControl( cl_command_queue queue )
     collectEnvParams( cPair.control );
 
     //	Discover and load the timer module if present
-    void* timerLibHandle = LoadSharedLibrary( "lib", "clsparseTimer", false );
+    void* timerLibHandle = LoadSharedLibrary( "lib", "clsparseTimer", true );
     if( timerLibHandle )
     {
         //	Timer module discovered and loaded successfully
